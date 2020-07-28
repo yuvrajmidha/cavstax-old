@@ -1,0 +1,47 @@
+{
+    "server": {
+        "port": "Server started at"
+    },
+    "db": {
+        "success": "Connected to database",
+        "error": "Error connecting database ->"
+    },
+    "user": {
+        "register": {
+            "alreadyReg": "User with this email is already registered",
+            "success": "Registration Successful. Please activate the account by verifying the mail send to your email. Email is only valid for 24 hours",
+            "verify":"Given emailId and Mobile-No doesn't match with registered emailId and mobileNo"
+        },
+        "activate": {
+            "linkExp": "Link has expired or Invalid token provided"
+        },
+        "login": {
+            "invalidEmail": "Invalid Email or Password",
+            "invalidPassword": "Invalid Email or Password",
+            "sourceHeaderNotSent": "Source Header not sent",
+            "invalidSourceHeader": "Invalid Source Header"
+        },
+        "resendActivation": {
+            "invalidEmail": "Email not registered.",
+            "timeNotExpired": "It has not been 24 hours previous activation mail was sent. Kindly find the previous mail or wait to send new activation email",
+            "alreadyActivated": "Your email is already activated. Please try signing in",
+            "success": "Email sent. Please activate the account by verifying the mail send to your email. Email is only valid for 24 hours"
+        },
+        "forgotPassword": {
+            "invalidEmail": "Email not registered. If you have registered, make sure you have activated the account",
+            "success": "Code has been sent to your email. Please put it in the box to reset password. Code is valid for 1 hour"
+        },
+        "resetPassword": {
+            "invalidToken": "Invalid Token",
+            "resetNotRequested": "Reset was not requested. So for you no such link exists.",
+            "success": "New password has been sent to your email id. Please login with that password."
+        },
+        "authToken": {
+            "invalidToken": "Invalid Token",
+            "tokenNotSent": "Authorization Token Not Sent"
+        },
+        "profile": {
+            "notExist": "User not exist."
+        }
+    }
+}

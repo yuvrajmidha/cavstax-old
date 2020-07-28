@@ -1,0 +1,7 @@
+{
+    "PORT": "3000",
+    "sessionConfKey": "sessionConfKey",
+    "jwtKey": "jwtKey",
+    "jwtActTokenExpirationTime": "24h", //jwt activation link token
+    "jwtSesTokenExpirationTime": "24h" //jwt session login token
+}
