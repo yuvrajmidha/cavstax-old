@@ -12,19 +12,23 @@ const msg = require("./config/messages.json");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extented:false}));
 
-
 //  STATIC BODY PATH
 app.use('/assets' ,express.static(path.join(__dirname, 'static')));
-
 app.set('view engine', 'ejs')
 app.set('views', 'views')
-
 app.use("/api/user/", userRoutes);
-
-app.get('/', (req, res) => {
-    res.render('index')
+// app.get('/', (req, res) => {
+//     res.render('index')
+// })
+app.get('/contact-us', (req, res) => {
+    res.render('contact-us')
 })
-
+app.get('/about-us', (req, res) => {
+    res.render('about-us')
+})
+app.get('/', (req, res) => {
+    res.render('gst-registration')
+})
 
 app.listen(process.env.PORT || 3000,function(){
     console.log('server started on port 3000 ');

@@ -1,0 +1,109 @@
+<%- include ('./partials/header') %>
+
+<!--==========================================
+	Theme Inner Banner 
+==============================================-->
+<div class="inner-page-banner banner-three"
+    style="background-image: url(https://image.freepik.com/free-photo/financial-accounting-concept-with-wooden-blocks-calculator-turquoise-table-flat-lay_176474-9442.jpg);">
+    <div class="opacity">
+        <div class="container">
+            <h1 class="wow fadeInUp animated" data-wow-delay="0.2s">The best legal advice is just a click
+                away</h1> <a href="contact-us" class="text-colour-light tran3s wow fadeInUp animated button-two"
+                data-wow-delay="0.3s">Get in touch</a>
+        </div> <!-- /.container -->
+    </div> <!-- /.opacity -->
+</div> <!-- /inner-page-banner -->
+<!-- 
+			=============================================
+				Contact Us
+			============================================== 
+            -->
+            <div class="container">
+                <div class="row">
+                    <div class="gst-text col-lg-6 col-sm-6">
+                        
+                            <h2>GST Registration - Goods & Service Tax Registration Online</h2>
+                            <h4>Fill the form to start the Registration process</h4>
+                            <p>Use India's preferred GST Registration partner to complete your GST Registration online in minutes. Also get support with filing and tax credits post-registration.</p>
+                   </div>
+                    <div class="gst-form col-lg-5 col-sm-6">
+                        <form action="/gst-registration" method="POST">
+                            <div class="row">
+                                <div class="col-xs-6 form-group">
+                                    <label for="firm-name">Firm Name</label>
+                                    <input type="text" class="form-control" placeholder="First name">
+                                </div>
+                                <div class="form-group col-xs-6">
+                                    <label for="contact-no.">Contact no.</label>
+                                    <input class="form-control" type="text" id="contact-no.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="text" class="form-control" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Business activity</label>
+                                <input type="text" class="form-control" id="email" placeholder="Email">
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-xs-6">
+                                    <label for="city">Place of business </label>
+                                    <select class="form-control" id="city">
+                                        <option selected>Click to select</option>
+                                        <option value="1">Chandigarh</option>
+                                        <option value="2">Yamunanagar</option>
+                                    </select>
+                               </div>
+                                <div class="form-group col-xs-6">
+                                    <label for="city">Type of GST Registration</label>
+                                    <select class="form-control" id="city">
+                                        <option selected>Click to select</option>
+                                        <option value="1">Chandigarh</option>
+                                        <option value="2">Yamunanagar</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-xs-12">
+                                    <label for="dob">Date of commencement</label>
+                                    <input class="form-control" type="date" id="dob" name="dob">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-xs-12">
+                                    <label for="AadharCard">Aadhar Card</label>
+                                    <input type="file" class="form-control" id="AadharCard">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-xs-12">
+                                    <label for="AadharCard">Aadhar Card</label>
+                                    <input type="file" class="form-control" id="AadharCard">
+                                </div>
+                            </div>
+                            <div class="row"><div class="col-xs-12"><button type="submit" class="p-bg-color hvr-trim-two">Add to cart</button></div></div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    <!--Contact Form Validation Markup -->
+    <!-- Contact alert -->
+    <div class="alert-wrapper" id="alert-success">
+        <div id="success">
+            <button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
+            <div class="wrapper">
+                <p>Your message was sent successfully.</p>
+            </div>
+        </div>
+    </div> <!-- End of .alert_wrapper -->
+    <div class="alert-wrapper" id="alert-error">
+        <div id="error">
+            <button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
+            <div class="wrapper">
+                <p>Sorry!Something Went Wrong.</p>
+            </div>
+        </div>
+    </div> <!-- End of .alert_wrapper -->
+</div> <!-- /.gst-registration-->
+<%- include ('./partials/footer') %>

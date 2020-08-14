@@ -1,3 +1,5 @@
 # ignore all logs
 *.log
 node_modules
+views/about-us.ejs
+views/index.ejs
