@@ -27,10 +27,14 @@ app.get('/about-us', (req, res) => {
     res.render('about-us')
 })
 app.get('/', (req, res) => {
+    res.render('index')
+})
+
+app.get('/gst', (req, res) => {
     res.render('gst-registration')
 })
 
-app.listen(process.env.PORT || 3000,function(){
-    console.log('server started on port 3000 ');
+app.listen(process.env.PORT || 4000,function(){
+    console.log('server started on port 4000 ');
 });
 
