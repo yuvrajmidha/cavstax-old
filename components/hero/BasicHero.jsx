@@ -10,8 +10,11 @@ import {
   useColorModeValue,
   createIcon,
   InputGroup,
+  Image,
   InputLeftElement,
-  Input
+  Input,
+  Flex,
+  Center
 } from '@chakra-ui/react';
 
 import {PhoneIcon, SearchIcon} from "@chakra-ui/icons"
@@ -25,13 +28,17 @@ export default function BasicHero(props) {
           rel="stylesheet"
         />
       </Head>
-      <Container maxW={'3xl'}>
+      <Box pos="relative">
+        <Center pos="absolute" top="0px" left="0px" height="100%" width="100%">
+            <Image src="/images/bg-image.png" height="100%"  width="1920px" objectFit="cover"></Image>
+        </Center> 
+        <Container maxW={'3xl'}>
         <Stack
           as={Box}
           textAlign={'center'}
           
           spacing={{ base: 8, md: 14 }}
-          py={{ base: 20, md: 36 }}>
+          py={{ base: 20, md: 28 }}>
           <Heading
           fontWeight={800}
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
@@ -95,6 +102,7 @@ export default function BasicHero(props) {
         </Stack>
        
       </Container>
+      </Box>
     </>
   );
 }

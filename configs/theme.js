@@ -6,6 +6,7 @@ const theme = extendTheme({
     brand: {
       100: "#f7fafc",
       // ...
+      500: "#1a2023",
       900: "#1a202c",
     },
   },
