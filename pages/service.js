@@ -94,17 +94,26 @@ function Service() {
                                         </FormControl>
                                         )}
                                     </Field>
-                                    <Button
+                                    {/* <Button
                                         mt={4}
                                         colorScheme="teal"
                                         isLoading={props.isSubmitting}
                                         type="submit"
                                     >
                                         Submit
-                                    </Button>
+                                    </Button> */}
                                     </Form>
                                 )}
                             </Formik>
+                            <form action='/api/payments/paynow' method="POST">
+                                    <Button
+                                        mt={4}
+                                        colorScheme="teal"
+                                        type="submit"
+                                    >
+                                        Submit
+                                    </Button>
+                            </form>
                         </Box>
                     </Box>
                 </HStack>
